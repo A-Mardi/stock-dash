@@ -16,7 +16,7 @@ const StockCard: React.FC<StockCardProps> = ({ symbol, price, change }) => {
       <div>
         <p
           className={`text-sm font-semibold ${
-            change >= 0 ? 'text-green-500' : 'text-red-500'
+            change >= 0 ? 'text-green-400' : 'text-red-400'
           }`}
         >
           {change >= 0 ? '+' : ''}

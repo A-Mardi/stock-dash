@@ -40,10 +40,11 @@ const Home: NextPage = () => {
         <title>Stock Dashboard</title>
         <meta name="description" content="A simple stock dashboard built with Next.js, TypeScript, and Tailwind CSS." />
         <link rel="icon" href="/favicon.ico" />
+
       </Head>
 
       <main className="container mx-auto px-4 py-8">
-        <h1 className="text-3xl font-bold mb-6 text-center">Stock Dashboard</h1>
+        <h1 className="text-3xl font-bold mb-5 text-center">Stock Dashboard</h1>
         {loading && <p className="text-center">Loading...</p>}
         {error && <p className="text-center text-red-500">{error}</p>}
         {!loading && !error && <StockList stocks={stocks} />}
